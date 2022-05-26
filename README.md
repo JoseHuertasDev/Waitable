@@ -34,14 +34,14 @@ echo $result; // It will print "Test"
 
 ```
 
-## Wait until all promises are resolved
+## Wait until all waitables are resolved
 
 ``` php
 $firstWaitable = new Waitable(function (IWaitable $waitable){
     $waitable->Resolve("First value");
 });
 $secondWaitable = new Waitable(function (IWaitable $waitable) use($secondValue){
-    $promise->Resolve("Second value");
+    $waitable->Resolve("Second value");
 });
 list($firstResult, $secondResult) = Waitable::WaitAll([$firstWaitable, $secondWaitable]);
 
