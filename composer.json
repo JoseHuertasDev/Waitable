@@ -9,9 +9,11 @@
     },
     "authors": [
         {
-            "name": "JHuertas"
+            "name": "JHuertas",
+            "email": "jhuertaszar@gmail.com"
         }
     ],
+    "license": "MIT",
     "require": {
         "ext-posix": "*",
         "ext-sysvshm": "*",
