@@ -58,6 +58,6 @@ This is an open source library, so you can collaborate if you want, feel free to
 
 # Apache
 
-If you want to enable pcntl in Apache you can check the following post that i've write on medium
+If you want to enable pcntl in Apache you can refer to the following post I wrote in medium
 
 https://medium.com/@jhuertasdeveloper/how-to-enable-pcntl-in-apache-56c6f6f0cbab
