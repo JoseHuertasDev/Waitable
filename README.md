@@ -15,7 +15,7 @@ This class is analogue to JavaScript Promise class
 ``` php
 $waitable = new Waitable(function (IWaitable $waitable){
   LongTask();
-  $waitable->Resolve(null); // When u call this method it will mark the Waitable as Fullfied
+  $waitable->Resolve(null); // When you call this method it will mark the Waitable as Fulfilled
 });
 ```
 
@@ -26,7 +26,7 @@ This will create a new Waitable and the function we pass to the constructor will
 ``` php
 
 $waitable = new Waitable(function (IWaitable $waitable){
-  $waitable->Resolve("Test"); // When u call this method it will mark the waitable as Fullfied
+  $waitable->Resolve("Test"); // When you call this method it will mark the waitable as Fulfilled
 });
 
 $result = $waitable->Wait();
@@ -49,5 +49,5 @@ echo $firstResult; // "First value"
 echo $secondResult; // "Second value"
 ```
 
-The static method WaitAll receives an array of IWaitable and wait untill all are fullfiled,  this method will return an array with the values returned by all the waitables
+The static method WaitAll receives an array of IWaitable and wait until all are fulfilled. This method will return an array with the values returned by all the waitables.
 
