@@ -25,7 +25,6 @@ class Waitable implements IWaitable
         if ($pid === -1) {
             throw new RuntimeException("Could not create waitable");
         } else if($pid == 0){ //If its 0 it means that is the parent process
-            echo "Entra acá, PID: $pid";
             $callback($this);
             posix_kill(getmypid(), SIGKILL );
         }
