@@ -21,15 +21,13 @@ class Waitable implements IWaitable
     {
         $this->attach();
         $this->generateKeys();
-        if (!function_exists('pcntl_fork')) {
-            throw new RuntimeException("Process need ext-pcntl");
-        }
         $pid = pcntl_fork();
         if ($pid === -1) {
             throw new RuntimeException("Could not create waitable");
         } else if($pid == 0){ //If its 0 it means that is the parent process
+            echo "Entra acá, PID: $pid";
             $callback($this);
-            die();
+            posix_kill(getmypid(), SIGKILL );
         }
     }
 
