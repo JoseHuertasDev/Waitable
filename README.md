@@ -3,7 +3,7 @@
 The Waitable class is used for asynchronous computing. A Waitable object has three states 
 - Fulfilled
 - Rejected
-- Running: this is the default state when it's created.
+- Running: ``` This is the default state when it's created ```
 
 This class is analogue to JavaScript Promise class
 
