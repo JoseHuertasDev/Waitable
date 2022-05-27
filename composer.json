@@ -15,6 +15,7 @@
     ],
     "license": "MIT",
     "require": {
+        "php": ">=7.0.33",
         "ext-posix": "*",
         "ext-sysvshm": "*",
         "ext-pcntl": "*"
