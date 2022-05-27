@@ -51,7 +51,7 @@ echo $secondResult; // "Second value"
 
 The static method WaitAll receives an array of IWaitable and wait until all are fulfilled. This method will return an array with the values returned by all the waitables.
 
-# Colaboration and Questions
+# Colaboration or getting help
 
 This is an open source library, so you can collaborate if you want, feel free to [create Pull Request](https://github.com/JoseHuertasDev/Waitable/pulls) or [open an issue](https://github.com/JoseHuertasDev/Waitable/issues) in case you need help or want to suggest something.
 
