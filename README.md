@@ -7,6 +7,8 @@ The Waitable class is used for asynchronous computing. A Waitable object has thr
 
 This class is analogue to JavaScript Promise class
 
+# Installation
+You can install this library from Composer executing the following commands ```composer require srdestino/waitable``` then all you have to do is use this as in the following examples
 
 # Usage
 
