@@ -22,5 +22,6 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^9"
-    }
+    },
+    "minimum-stability": "stable"
 }
